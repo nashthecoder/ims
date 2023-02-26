@@ -21,4 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Error fix for rake aborted!
+NoMethodError: undefined method `devise’ for User  https://medium.com/@kuruyavuz3/rake-aborted-2da1233a4561
