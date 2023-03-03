@@ -1,20 +1,23 @@
-<% if current_user %>
-    <p> Hello <%= current_user.email %></p>
-    <p>You are a [<%= current_user.role %>]</p>
-    <% if current_user.admin? %>
-        There are <%= User.count %> users in the system.
-    <% end %>
-    <p>You have successfully authenticated you account.</p>
-
-    <%= link_to "Sign out!", destroy_user_session_path, method: :delete, class:"btn btn-success btn-sm" %>
-<% else %>
-    <div class="card text-center" style="width: 20rem;">
-        <h5 class="card-header">You are not signed in</h5>
-        <div class="card-body">
-        <%= link_to "Sign up!", new_user_registration_path, class:"btn btn-success btn-sm" %>
+<div>
+    <% if current_user %>
+        <p> Hello <%= current_user.email %></p>
+        <p>You are a [<%= current_user.role %>]</p>
+        <% if current_user.admin? %>
+            There are <%= User.count %> users in the system.
+        <% end %>
         <br />
+        <p class="text" style="padding-left: 2rem; margin-top: 2rem;">You have successfully authenticated you account.</p>
         <br />
-        <%= link_to "Login", new_user_session_path, class:"btn btn-success btn-sm" %>
+        <%= link_to "Sign out!", destroy_user_session_path, method: :delete, class:"btn btn-success btn-sm" %>
+    <% else %>
+        <div class="card text-center" style="width: 20rem;">
+            <h5 class="card-header">You are not signed in</h5>
+            <div class="card-body">
+            <%= link_to "Sign up!", new_user_registration_path, class:"btn btn-success btn-sm" %>
+            <br />
+            <br />
+            <%= link_to "Login", new_user_session_path, class:"btn btn-success btn-sm" %>
+            </div>
         </div>
-    </div>
-<% end %>
+    <% end %>
+</div>

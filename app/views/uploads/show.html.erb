@@ -1,6 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @upload %>
+<div>
+  <% @upload.files.each do |file| %>
+  <%= image_tag(file, :width => 200) %>
+  <% end %>
+</div>
 
 <div>
   <%= link_to "Edit this upload", edit_upload_path(@upload) %> |
