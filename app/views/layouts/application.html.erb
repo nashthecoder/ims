@@ -5,30 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <a class="navbar-brand" href="#"><h1>IMS MVP</h1></a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <%= render 'layouts/navbar'%>
     <div class="col d-flex justify-content-center">
       <div class="row" style="padding-left: 2rem; margin-top: 2rem;">
         <div class="col">
           <%= yield %>
         </div>
       </div>
-  </div>
+    </div>
   </body>
 </html>
