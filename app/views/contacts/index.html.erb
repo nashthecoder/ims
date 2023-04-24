@@ -1,9 +1,6 @@
-
 <p style="color: green"><%= notice %></p>
-
 <h1>Contacts</h1>
-
-<div id="contacts">
+<div class="table" id="contacts">
   <% @contacts.each do |contact| %>
     <%= render contact %>
     <p>
@@ -11,5 +8,4 @@
     </p>
   <% end %>
 </div>
-
 <%= link_to "New contact", new_contact_path %>

@@ -1,8 +1,10 @@
 <p style="color: green"><%= notice %></p>
-<%= render @contact %>
+<div class="jumbotron">
+  <%= render @contact %>
+</div>
 <div>
-  <%= link_to "Edit this contact", edit_contact_path(@contact) %> |
-  <%= link_to "Back to contacts", contacts_path %>
+  <%= link_to "Edit this contact", edit_contact_path(@contact), class:"btn btn-success btn-sm" %> |
+  <%= link_to "Back to contacts", contacts_path, class:"btn btn-secondary btn-sm" %>
   <br />
   <br />
   <%= button_to "Destroy this contact", @contact, method: :delete, class:"btn btn-danger btn-sm" %>
