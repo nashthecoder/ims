@@ -5,13 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version [3.1.3]
+* Ruby version 3.1.3
 
 * System dependencies
-    PopperJS/core [2.11.6] 
-    Bootstrap[^5.2.3]
-    Bootstrap-icons[^1.10.3] 
-    Sass": [^1.58.3]
+     - PopperJS/core 2.11.6 
+     - Bootstrap ^5.2.3
+     - Bootstrap-icons ^1.10.3 
+     - Sass" 1.58.3
 
 * Configuration
 
