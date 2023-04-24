@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :activities
   resources :contacts
   resources :uploads
   devise_for :users
