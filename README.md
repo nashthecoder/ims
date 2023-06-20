@@ -8,6 +8,7 @@
      - Bootstrap-icons ^1.10.3 
      - Sass" 1.58.3
 ---
+[Link to blog](https://medium.com/switching-gears/48-hour-solo-hackathon-building-a-full-stack-mvp-app-with-ruby-on-rails-7341c7244e8f)
 The MVP will allow users to create, view, update, and delete various types of information such as documents, contacts, and activities. The MVP will include the following features:
 ### User Authentication: 
 Users will be able to create accounts, log in, and log out of the system.
